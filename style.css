@@ -1,0 +1,309 @@
+/* HEADER */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+  
+  box-sizing:border-box;
+  outline:none; border:none;
+  text-decoration:none;
+  transition: all .2s linear;
+  text-transform:capitalize;
+}
+
+.banner {
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+    url(./images/Dropezy-banner.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  .navbar{
+    display:flex;
+    flex-direction:column;
+  }
+}
+.nav-list{
+  background-color:whitesmoke;
+  opacity:1;
+  padding:8px;
+}
+@media screen and (max-width: 600px) {
+  .nav-list{
+    padding:5px;
+  }
+}
+
+.logo-section{
+  width:100px;
+  height:100px;
+}
+
+.logo-section .logo {
+  width: 100px;
+  cursor: pointer;
+  padding-right:10px;
+}
+@media screen and (max-width: 600px) {
+  .logo-section .logo{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+@media screen and (max-width: 600px) {
+  .navbar ul li{
+    width:100%;
+  }
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #ff9b6a;
+  text-transform: uppercase;
+  font-weight:bold;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  transform: translateY(-30%);
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .content{
+    width: 100%;
+    top: 30%;
+    transform: translateY(-30%);
+    text-align: center;
+    color: #fff;
+  }
+}
+
+.content h1 {
+  font-size: 70px;
+  margin-top: 50px;
+}
+
+.content p{
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+
+.content a{
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+  color: aliceblue;
+}
+
+
+
+
+
+
+/* PRODUCTS */
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+
+  display:flex;
+  flex-direction:column;
+}
+
+.h2-category {
+  padding: 0 10vw;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+
+.h3-category{
+  padding: 0 10vw;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.h4-category{
+  padding: 0 10vw;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.h5-category{
+  margin-top:10px;
+  font-size:16px;
+}
+
+.ol-inline{
+  display: block;
+  list-style-type: decimal;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.screen-shot{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items:center;
+  object-fit:contain;
+
+  padding: 0 10vw;
+  width:100%;
+  height:500px;
+}
+
+
+.image{
+  margin-left:20%;
+  margin-bottom:5%;
+  float:left;
+  height: 500px;
+  width:auto;
+  max-width:800px;
+  object-fit:contain;
+}
+
+
+.iphone{
+  margin-left:20%;
+  margin-bottom:5%;
+  float:left;
+  height: 400px;
+  width:auto;
+  max-width:600px;
+  object-fit:contain;
+}
+.iphone:hover{
+  transform: scale(1.5);
+}
+
+
+.text{
+  float:right;
+  width:45%;
+  margin-top:18%;
+}
+
+.left-text{
+  float:left;
+  width:40%;
+  margin-left:12%;
+  margin-bottom:2%;
+}
+
+.right-text{
+  float:right;
+  width:40%;
+  margin-right:2%;
+  margin-bottom:2%;
+}
+
+.normal-text{
+  float:left;
+  margin-left:12%;
+  margin-bottom:2%;
+}
+
+
+
+
+
+/* Footer section */
+.footer {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+  padding: 0 10vw;
+  display: flex;
+  justify-content: center;
+}
+
+.footer .link{
+  background-color:azure;
+  text-align:center;
+  padding:60px;
+}
+
+.footer-container{
+  justify-content: center;
+  align-items:center;
+  padding: 10px;
+  margin-top:20px;
+}
+
+
+
+
+/* modified from https://www.w3schools.com/HOWTO/howto_js_scroll_to_top.asp */
+#topBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: orange; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 20px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+#topBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+
+html{
+  overflow-x:hidden;
+}
+
