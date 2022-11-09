@@ -209,6 +209,18 @@
   max-width:800px;
   object-fit:contain;
 }
+@media screen and (max-width: 600px) {
+  .image{
+    width: 60%;
+    /* top: 30%; */
+    transform: translateY(2%);
+    text-align: center;
+    color: #fff;
+  }
+  .image:hover{
+    transform: scale(1.5);
+  }
+}
 
 
 .iphone{
@@ -236,6 +248,16 @@
 .wireframe:hover{
   transform: scale(1.5);
 }
+@media screen and (max-width: 600px) {
+  .wireframe{
+    margin-left:18%;
+    width: 80%;
+    top: 8%;
+    transform: translateY(-8%);
+    text-align: center;
+    color: #fff;
+  }
+}
 
 .studio-crit{
   margin-left:20%;
@@ -245,6 +267,22 @@
   width:auto;
   max-width:800px;
   object-fit:contain;
+}
+@media screen and (max-width: 600px) {
+  .studio-crit{
+    width: 50%;
+    height:80%;
+    margin-left:25%;
+    top: 10%;
+    float:center;
+    transform: translateY(5%);
+    text-align: center;
+    color: #fff;
+    object-fit:contain;
+  }
+  .studio-crit:hover{
+    transform: scale(2);
+  }
 }
 
 .analysis{
@@ -259,6 +297,15 @@
 .analysis:hover{
   transform: scale(1.5);
 }
+@media screen and (max-width: 600px) {
+  .analysis{
+    width: 60%;
+    transform: translateY(5%);
+    text-align: center;
+    color: #fff;
+  }
+}
+
 
 
 .text{
@@ -285,6 +332,23 @@
   float:left;
   margin-left:12%;
   margin-bottom:2%;
+}
+
+.video{
+  float:left;
+  margin-left:12%;
+  margin-bottom:2%;
+}
+@media screen and (max-width: 600px) {
+  .video{
+    width: 100%;
+    height:80%;
+    margin-left:3%;
+    margin-top:10%;
+    /* transform: translateY(5%); */
+    text-align: center;
+    color: #fff;
+  }
 }
 
 .text-intro{
@@ -348,4 +412,5 @@
 html{
   overflow-x:hidden;
 }
+
 
