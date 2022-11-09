@@ -224,6 +224,19 @@
   transform: scale(1.5);
 }
 
+.wireframe{
+  margin-left:30%;
+  margin-bottom:5%;
+  float:center;
+  height: 600px;
+  width:auto;
+  max-width:800px;
+  object-fit:contain;
+}
+.wireframe:hover{
+  transform: scale(1.5);
+}
+
 
 .text{
   float:right;
