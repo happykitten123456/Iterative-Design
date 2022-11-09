@@ -342,6 +342,19 @@
   margin-bottom:2%;
 }
 
+.figma{
+  float:left;
+  margin-left:12%;
+  margin-bottom:2%;
+}
+@media screen and (max-width: 800px) {
+  .figma{
+    width: 100%;
+    margin-left:0%;
+    margin-right:12%;
+  }
+}
+
 .video{
   float:left;
   margin-left:12%;
@@ -420,4 +433,5 @@
 html{
   overflow-x:hidden;
 }
+
 
